@@ -1,5 +1,5 @@
 # keycloak-themes-dev
-Simple docker development environment for [Keycloak](http://www.keycloak.org/) themes
+Simple development environment for [Keycloak](http://www.keycloak.org/) themes using Docker
 
 *tested with keycloak 3.4.2*
 
@@ -14,5 +14,11 @@ cd keycloak-themes-dev
 ./run.sh
 ```
 
-The script will prompt you if want to open up the themes directory Visual Studio Code and load the Keycloak 
-login screen in your browser.
+- The themes directory will now contain the themes for Keycloak, which the Docker environment will read from
+- To access the keycloak admin panel for themes go to , login using the following credentials:
+```
+username: admin
+password: 1Password2
+```
+- The script will prompt you if want to open up the themes directory Visual Studio Code, and load the Keycloak 
+login screen in your browser
