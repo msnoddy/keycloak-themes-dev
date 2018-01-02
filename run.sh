@@ -54,21 +54,22 @@ function main
         case "$REPLY" in
             "y") openKeycloakInBrowser; break;;
             "Y") openKeycloakInBrowser; break;;
-            *) echo "invalid";;
+            "n") break;;
+            "N") break;;
+            *) echo "Please input [Y/y/N/n]";;
         esac
     done
-    echo
-
-    echo
+    
     echo "Open themes directory in VsCode? [y/n] "
     select anwser in "${yesNoOptions[@]}"; do
         case "$REPLY" in
             "y") openThemesInVsCode; break;;
             "Y") openThemesInVsCode; break;;
-            *) echo "invalid";;
+            "n") break;;
+            "N") break;;
+            *) echo "Please input [Y/y/N/n]";;
         esac
     done
-    echo
 
     echo "done!"
 }

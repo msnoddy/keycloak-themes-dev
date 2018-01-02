@@ -6,16 +6,16 @@ Simple development environment for [Keycloak](http://www.keycloak.org/) themes u
 ## Install
 
 - Docker needs to be installed on your machine (Get it [here](https://www.docker.com/community-edition))
-- Run the below commands to install and run the docker enviroment:
+- Run the below command to install and run the docker enviroment:
 
 ```{shell{
-git clone https://github.com/msnoddy/keycloak-themes-dev
-cd keycloak-themes-dev
+git clone https://github.com/msnoddy/keycloak-themes-dev &&
+cd keycloak-themes-dev &&
 ./run.sh
 ```
 
 - The themes directory will now contain the themes for Keycloak, which the Docker environment will read from
-- To access the keycloak admin panel for themes go to , login using the following credentials:
+- To access the keycloak admin panel for themes go to http://localhost:8888/auth/admin/master/console/#/realms/master/theme-settings - use the following credentials to login:
 ```
 username: admin
 password: 1Password2
