@@ -1,10 +1,11 @@
 # keycloak-themes-dev
-Simple docker environment for developing themes for [Keycloak](http://www.keycloak.org/)
+Simple docker development environment for [Keycloak](http://www.keycloak.org/) themes
 
 *tested with keycloak 3.4.2*
 
 ## Install
 
+- Docker needs to be installed on your machine (Get it [here](https://www.docker.com/community-edition))
 - Run the below commands to install and run the docker enviroment:
 
 ```{shell{
